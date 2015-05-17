@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Belezka</h1>
+
+    <p>Ime:{{ belezka.ime }}</p>
+    <p>Email:<a href="mailto:{{ belezka.email }}" type="mail">{{ belezka.email }}</a></p>
+    <p>Sporočilo:{{ belezka.sporocilo }}</p>
+    <p>ID:{{ belezka.key.id() }}</p>
+    <p>Ura in Datum:{{ belezka.created.strftime('%H:%M | %d.%m.%Y') }}</p>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+
+        <h1>Knjiga Pohval in Pritožb</h1>
+
+
+        <form method="post" action="/poslano">
+            <p>Ime in priimek: <input class="name" name="ime" placeholder="Marko Velkavrh"></p>
+            <p>Email: <input class="email" name="email" placeholder="test@test.com" type="email"></p>
+            <p>Sporocilo: <textarea class="sporocilo" name="sporocilo" placeholder="Napiši sem" required></textarea></p>
+            <button>Poslji</button>
+        </form>
+
+</body>
+</html>
