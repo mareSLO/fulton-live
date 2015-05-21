@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Sporocilo</h1>
+
+    <p>Datum {{ sporocilo.created.strftime('%H:%M:%S %d.%m.%Y') }}</p>
+    <p>Ime: {{ sporocilo.ime }}</p>
+    <p>Email: <a href="mailto:{{ sporocilo.email }}" type="mail">{{ sporocilo.email }}</a></p>
+    <p>Sporočilo: {{ sporocilo.sporocilo }}</p>
+    <p>ID: {{ sporocilo.key.id() }}</p>
+
+    <a href="/"><button>Domov</button></a>
+    <a href="/seznam"><button>Nazaj</button></a>
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/uredi"><button>Uredi</button></a>
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/izbrisi"><button>Izbrisi</button></a>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

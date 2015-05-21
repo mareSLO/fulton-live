@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Uredi sporocila</h1>
+
+    <form method="post" action="/sporocilo/{{ sporocilo.key.id() }}/uredi">
+        <p>Ime: <input class="ime" name="uredi_ime" value="{{ sporocilo.ime }}"></p>
+        <p>Email: <input class="email" name="uredi_email" value="{{ sporocilo.email }}" type="email"></p>
+        <p>Sporocilo: <input class="sporocilo" name="uredi_sporocilo" value="{{ sporocilo.sporocilo }}"></p>
+        <button>OK</button>
+    </form>
+
+</body>
+</html>
